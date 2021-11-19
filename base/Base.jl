@@ -1,6 +1,6 @@
 # This file is a part of Julia. License is MIT: https://julialang.org/license
 
-baremodule Base
+baremodule Base # Hello world
 
 using Core.Intrinsics, Core.IR
 
