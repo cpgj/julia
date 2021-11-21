@@ -188,10 +188,10 @@ applied to elements of `itr`.
 
 # Examples
 ```jldoctest
-julia> unique(x -> x^2, [1, -1, 3, -3, 4])
+julia> unique(x -> x^2, [-1, 1, -3, 3, 4])
 3-element Vector{Int64}:
- 1
- 3
+ -1
+ -3
  4
 ```
 """
@@ -253,10 +253,10 @@ elements of `A`, then return the modified A.
 
 # Examples
 ```jldoctest
-julia> unique!(x -> x^2, [1, -1, 3, -3, 4])
+julia> unique!(x -> x^2, [-1, 1, -3, 3, 4])
 3-element Vector{Int64}:
- 1
- 3
+ -1
+ -3
  4
 
 julia> unique!(n -> n%3, [5, 1, 8, 9, 3, 4, 10, 7, 2, 6])
